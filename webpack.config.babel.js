@@ -7,6 +7,7 @@ const config = {
     mode: 'development',
     target: 'node',
     entry: [
+        'mysql2',
         './src/FetchFromDBDynamicValue.js'
     ],
     output:{
