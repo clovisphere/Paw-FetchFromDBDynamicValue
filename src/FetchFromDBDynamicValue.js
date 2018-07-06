@@ -19,8 +19,10 @@ import * as mysql from 'mysql2';
                     }
                 );
                 // run query
-                con.query(this.query, fucntion(err, rows) {
-                    iif(!err) result = rows[0][this.column]; // return the first column
+                con.query(this.query, function(err, rows) {
+                    if(!err) { 
+                        result = rows[0][this.column];
+                    }
                 });
                 // close connection
                 con.end();

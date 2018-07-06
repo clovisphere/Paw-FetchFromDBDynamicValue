@@ -1,32 +1,32 @@
 {
-  "name": "paw-fetchfromdbdynamicvalue",
-  "version": "1.0.0",
-  "description": "allows one to fetch dynamic value from a database",
-  "main": "src/FetchFromDBDynamicValue.js",
-  "scripts": {
-    "build": "rm -rf dist/ && BUILD_ENV=build ./node_modules/.bin/webpack --bail --display-error-details",
-    "test": "exit 0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clovisphere/PAW-FetchFromDBDynamicValue.git"
-  },
-  "author": "clovis mugaruka",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue/issues"
-  },
-  "homepage": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue#readme",
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.24.1",
-    "path": "^0.12.7",
-    "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8"
-  },
-  "dependencies": {
-    "mysql2": "^1.5.3"
-  }
+    "name": "paw-fetchfromdbdynamicvalue",
+    "version": "1.0.0",
+    "description": "allows one to fetch dynamic value from a database",
+    "main": "src/FetchFromDBDynamicValue.js",
+    "scripts": {
+        "build": "rm -rf dist/ && BUILD_ENV=build ./node_modules/.bin/webpack --bail --display-error-details",
+        "test": "exit 0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/clovisphere/PAW-FetchFromDBDynamicValue.git"
+    },
+    "author": "clovis mugaruka",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue/issues"
+    },
+    "homepage": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue#readme",
+    "devDependencies": {
+        "babel-core": "6.26.3",
+        "babel-loader": "^7.1.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2015": "^6.24.1",
+        "path": "^0.12.7",
+        "webpack": "^4.15.1",
+        "webpack-cli": "^3.0.8"
+    },
+    "dependencies": {
+        "mysql2": "^1.5.3"
+    }
 }
