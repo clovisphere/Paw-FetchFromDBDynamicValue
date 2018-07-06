@@ -1,4 +1,4 @@
-# PAW - Query MySQL Extension
+# PAW-FetchFromDBDynamicValue
 
-A [Paw](https://paw.cloud/) extension to query a MYSQL DB.
+A [Paw](https://paw.cloud/) extension to fetch value from a database (currently limited to [mysql](https://www.mysql.com/)).
 
