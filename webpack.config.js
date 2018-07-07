@@ -18,9 +18,6 @@ module.exports = {
     entry: {
         app: './src/FetchFromDBDynamicValue.js'
     },
-    resolve:{
-        fallback: path.join(__dirname, 'node_modules')
-    },
     output: {
         path: path.resolve(__dirname, './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
         pathinfo: true,
