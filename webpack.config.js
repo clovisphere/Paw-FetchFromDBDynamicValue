@@ -15,6 +15,7 @@ const name = 'FetchFromDBDynamicValue'
 module.exports = {
     mode: 'development',
     target: 'node',
+    node: { __dirname: true },
     entry: path.resolve('./src/FetchFromDBDynamicValue.js'),
     output: {
         path: path.resolve(__dirname, './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
@@ -25,6 +26,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.jsx?$/,
+            include: path.resolver('./src'),
             loader: 'babel-loader',
             query: {
                 presets: ['env']
