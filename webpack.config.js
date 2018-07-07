@@ -1,4 +1,17 @@
-const path = require('path')
+var webpack = require('webpack');
+var path = require('path');
+var fs = require('fs');
+
+var nodeModules = {};
+
+fs.readdirSync('node_modules')
+  .filter(function(x) {
+    return ['.bin'].indexOf(x) === -1;
+  })
+  .forEach(function(mod) {
+    nodeModules[mod] = 'commonjs ' + mod;
+  });
+
 const name = 'FetchFromDBDynamicValue'
 
 module.exports = {
@@ -16,11 +29,11 @@ module.exports = {
     module: {
         rules: [{
             test: /\.jsx?$/,
-            exclude: /node_modules/,
             loader: 'babel-loader',
             query: {
                 presets: ['env']
             }
         }]
-    }
+    },
+    externals: nodeModules,
 }
