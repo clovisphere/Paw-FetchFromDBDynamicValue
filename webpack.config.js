@@ -1,9 +1,7 @@
 var path = require('path');
 var fs = require('fs');
-
 var nodeModules = {};
 
-// backend to add node_modules directories to 'externals'
 fs.readdirSync('node_modules')
   .filter(function(x) {
     return ['.bin'].indexOf(x) === -1;
@@ -19,6 +17,13 @@ module.exports = {
     target: 'node',
     entry: {
         app: './src/FetchFromDBDynamicValue.js'
+    },
+    resolve:{
+         root: [
+             path.resolve(__dirname, 'src'),
+             path.resolve(__dirname, 'node_modules')
+         ],
+        extensions: ['', '.js']
     },
     output: {
         path: path.resolve(__dirname, './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
