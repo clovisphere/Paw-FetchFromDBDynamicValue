@@ -26,7 +26,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.jsx?$/,
-            include: path.resolver('./src'),
+            include: path.resolve('./src'),
             loader: 'babel-loader',
             query: {
                 presets: ['env']
