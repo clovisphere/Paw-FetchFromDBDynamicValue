@@ -1,6 +1,5 @@
 import * as mysql from 'mysql2';
 
-
 (function() {
     let FetchFromDBDynamicValue;
 

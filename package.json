@@ -9,20 +9,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/clovisphere/PAW-FetchFromDBDynamicValue.git"
+        "url": "git+https://github.com/clovisphere/Paw-FetchFromDBDynamicValue.git"
     },
     "author": "clovis mugaruka",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue/issues"
+        "url": "https://github.com/clovisphere/Paw-FetchFromDBDynamicValue/issues"
     },
-    "homepage": "https://github.com/clovisphere/PAW-FetchFromDBDynamicValue#readme",
+    "homepage": "https://github.com/clovisphere/Paw-FetchFromDBDynamicValue#readme",
     "devDependencies": {
         "babel-core": "6.26.3",
         "babel-loader": "^7.1.5",
         "babel-preset-env": "^1.7.0",
-        "webpack": "^4.15.1",
-        "webpack-cli": "^3.0.8"
+        "webpack": "^4.15.1"
     },
     "dependencies": {
         "mysql2": "^1.5.3"
