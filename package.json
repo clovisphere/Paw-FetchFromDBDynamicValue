@@ -4,7 +4,7 @@
     "description": "allows one to fetch dynamic value from a database",
     "main": "src/FetchFromDBDynamicValue.js",
     "scripts": {
-        "build": "rm -rf build/ && BUILD_ENV=build ./node_modules/.bin/webpack --bail --display-error-details",
+        "build": "rm -rf build/ && BUILD_ENV=build ./node_modules/.bin/webpack --bail --run-dev --progress",
         "test": "exit 0"
     },
     "repository": {
@@ -21,7 +21,8 @@
         "babel-core": "6.26.3",
         "babel-loader": "^7.1.5",
         "babel-preset-env": "^1.7.0",
-        "webpack": "^4.15.1"
+        "webpack": "^4.15.1",
+        "webpack-command": "^0.4.1"
     },
     "dependencies": {
         "mysql2": "^1.5.3"

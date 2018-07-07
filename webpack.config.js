@@ -2,7 +2,7 @@ const path = require('path')
 const name = 'FetchFromDBDynamicValue'
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     target: 'node',
     entry: {
         app: './src/FetchFromDBDynamicValue.js'
