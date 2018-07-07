@@ -4,6 +4,7 @@ var fs = require('fs');
 
 var nodeModules = {};
 
+// backend to add node_modules directories to 'externals'
 fs.readdirSync('node_modules')
   .filter(function(x) {
     return ['.bin'].indexOf(x) === -1;
@@ -36,4 +37,9 @@ module.exports = {
         }]
     },
     externals: nodeModules,
+    plugins: [
+        new webpack.IgnorePlugin(/\.(css|less)$/),
+        new webpack.BannerPlugin('require("source-map-support").install();',{ raw: true, entryOnly: false })
+    ],
+    devtool: 'sourcemap'
 }
