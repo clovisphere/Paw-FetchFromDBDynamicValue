@@ -4,7 +4,7 @@
     "description": "allows one to fetch dynamic value from a database",
     "main": "src/FetchFromDBDynamicValue.js",
     "scripts": {
-        "build": "webpack",
+        "build": "webpack --config webpack.config.js",
         "test": "exit 0"
     },
     "repository": {
