@@ -1,4 +1,4 @@
-import * as mysql from 'mysql2';
+const mysql = require('mysql2');
 
 (function() {
     let FetchFromDBDynamicValue;
