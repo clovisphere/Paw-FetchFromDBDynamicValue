@@ -2,15 +2,19 @@ const path = require('path')
 const name = 'FetchFromDBDynamicValue'
 
 module.exports = {
+    mode: 'production',
+    target: 'node',
     entry: {
         app: './src/FetchFromDBDynamicValue.js'
     },
     output: {
-        path: path.resolve(__dirname, 'build'),
-        filename: name + 'js'
+        path: path.resolve(__dirname, './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
+        pathinfo: true,
+        publicPath: '/build/',
+        filename: name + '.js'
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js?$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
