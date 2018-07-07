@@ -19,11 +19,7 @@ module.exports = {
         app: './src/FetchFromDBDynamicValue.js'
     },
     resolve:{
-         root: [
-             path.resolve(__dirname, 'src'),
-             path.resolve(__dirname, 'node_modules')
-         ],
-        extensions: ['', '.js']
+         mysql2: path.resolve(__dirname, 'node_modules/mysql2'),
     },
     output: {
         path: path.resolve(__dirname, './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
