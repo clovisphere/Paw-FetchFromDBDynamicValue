@@ -25,6 +25,7 @@
         "webpack-command": "^0.4.1"
     },
     "dependencies": {
-        "mysql2": "^1.5.3"
+        "mysql2": "^1.5.3",
+        "source-map-support": "^0.5.6"
     }
 }
