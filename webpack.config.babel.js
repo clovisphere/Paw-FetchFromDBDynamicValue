@@ -1,32 +1,22 @@
-import webpack from 'webpack'
-import path from 'path'
-
+const path = require('path')
 const name = 'FetchFromDBDynamicValue'
 
-const config = {
-    mode: 'development',
-    target: 'node',
-    entry: [
-        'mysql2',
-        './src/FetchFromDBDynamicValue.js'
-    ],
-    output:{
-        path: path.join(__dirname,
-            './build/io.clovisphere.PawExtensions.FetchFromDBDynamicValue'),
-       // pathInfo: true,
-        publicPath: '/build/',
-        filename: name + '.js'
+module.exports = {
+    entry: {
+        app: './src/FetchFromDBDynamicValue.js'
+    },
+    output: {
+        path: path.resolve(__dirname, 'build'),
+        filename: name + 'js'
     },
     module: {
-        rules: [
-            {
-                loader: 'babel-loader',
-                include: [
-                    path.resolve(__dirname, 'src'),
-                ],
-                test: /\.jsx?$/,
+        loaders: [{
+            test: /\.js?$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+                presets: ['env']
             }
-        ]
+        }]
     }
 }
-module.exports = config

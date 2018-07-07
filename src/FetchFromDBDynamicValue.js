@@ -2,7 +2,7 @@ import * as mysql from 'mysql2';
 
 
 (function() {
-    var FetchFromDBDynamicValue;
+    let FetchFromDBDynamicValue;
 
     FetchFromDBDynamicValue = function() {
         this.evaluate = function(context) {
@@ -10,7 +10,7 @@ import * as mysql from 'mysql2';
 
             if(this.query) {
                 // initialize connection
-                let con = mysql.createConnection(
+                const con = mysql.createConnection(
                     {
                         host: this.host,
                         user: this.user,
