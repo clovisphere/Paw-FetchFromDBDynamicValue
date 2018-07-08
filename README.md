@@ -2,9 +2,14 @@
 
 A [Paw](https://paw.cloud/) extension to fetch value from a database (currently limited to [MySQL](https://www.mysql.com/)).
 
+![Extension](screenshot/ext.png)
+
 
 **Important Note:**
-> I still need to figure out and fix the 'No Module Named' error. My guess is PAW's extensions use 'target': 'web', and this limit the use of backend related modules/packages...
+> I still need to figure out and fix the "Cannot find module 'mysql2'" error. My guess is PAW's extensions use 'target': 'web', and this limit the use of backend related modules/packages...
+
+![error](screenshot/error.png)
+
 
 #### Prerequisites
 
