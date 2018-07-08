@@ -23,11 +23,5 @@ module.exports = {
             }
         }]
     },
-    externals: [
-        ext(
-            {
-                whitelist:['mysql2']
-            }
-        )
-    ]
+    externals: [ext()]
 }
