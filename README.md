@@ -1,6 +1,6 @@
 # PAW-FetchFromDBDynamicValue
 
-A [Paw](https://paw.cloud/) extension to fetch value from a database (currently limited to [mysql](https://www.mysql.com/)).
+A [Paw](https://paw.cloud/) extension to fetch value from a database (currently limited to [MySQL](https://www.mysql.com/)).
 
 
 **Important Note:**
