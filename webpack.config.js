@@ -4,7 +4,7 @@ const name = 'FetchFromDBDynamicValue'
 
 module.exports = {
     mode: 'development',
-    target: 'node',
+    target: 'node-webkit',
     node: { __dirname: true },
     entry: path.resolve('./src/FetchFromDBDynamicValue.js'),
     output: {
