@@ -1,4 +1,4 @@
-const mysql = require('mysql2');
+import * as mysql from 'mysql2';
 
 (() => {
     let FetchFromDBDynamicValue;
@@ -28,13 +28,9 @@ const mysql = require('mysql2');
             return result;
         };
 
-        this.title = () => {
-            return "Dynamic Value";
-        };
+        this.title = () => "Dynamic Value";
 
-        this.text = () => {
-            return "Generated Token";
-        };
+        this.text = () => "Generated Token";
     };
 
     FetchFromDBDynamicValue.identifier = "io.clovisphere.PawExtensions.FetchFromDBDynamicValue";
