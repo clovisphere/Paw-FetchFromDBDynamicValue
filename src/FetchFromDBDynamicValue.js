@@ -1,10 +1,10 @@
 const mysql = require('mysql2');
 
-(function() {
+(() => {
     let FetchFromDBDynamicValue;
 
-    FetchFromDBDynamicValue = function() {
-        this.evaluate = function(context) {
+    FetchFromDBDynamicValue = () => {
+        this.evaluate = (context) => {
             let result = 0;
 
             if(this.query) {
@@ -18,22 +18,21 @@ const mysql = require('mysql2');
                     }
                 );
                 // run query
-                con.query(this.query, function(err, rows) {
-                    if(!err) { 
-                        result = rows[0][this.column];
-                    }
+                con.query(this.query, (err, rows) => {
+                    // close connection
+                    con.close();
+                    
+                    if(!err) result = rows[0][this.column];
                 });
-                // close connection
-                con.end();
             }
             return result;
         };
 
-        this.title = function() {
+        this.title = () => {
             return "Dynamic Value";
         };
 
-        this.text = function() {
+        this.text = () => {
             return "Generated Token";
         };
     };
