@@ -3,7 +3,7 @@
 A [Paw](https://paw.cloud/) extension to fetch value from a database (currently limited to [mysql](https://www.mysql.com/)).
 
 
-**Note:**
+**Important Note:**
 > I still need to figure and fix the 'No Module Named' error. My guess is PAW's extensions use 'target': 'web', and this limit the use of backend related modules/packages...
 
 #### Prerequisites
