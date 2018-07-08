@@ -26,7 +26,7 @@ module.exports = {
     externals: [
         ext(
             {
-                whitelist:['mysq2']
+                whitelist:['mysql2']
             }
         )
     ]
